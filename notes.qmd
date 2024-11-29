@@ -6,23 +6,53 @@ format:
     theme: cosmo
 ---
 
-## Quarto
+## Download and install Git and Git BASH on Windows
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+### Download Git
 
-## Running Code
+It is recommended to download "Git for Windows" from [https://git-scm.com/downloads/win](https://git-scm.com/downloads/win).
+Git for Windows includes the Git SCM and Git BASH along other tools. Git BASH
+is a BASH emulation used to run GIT form the command line. Using Git BASH is preferable
+over using Powershell (for most people), as Git BASH behaves just likes git commands
+on LINUX and UNIX. Using Powershell is also a viable option, but it might require (TODO: make some tests myself?) some more technical knowledge on how things work.
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+### First-time Git setup
 
-```{r}
-1 + 1
-```
+Describe how to setup Git after installing it. Look to Pro Git for inspiration.
 
-You can add options to executable code like this 
+git config stuff that should be done
+- Identity : user.name and user.email.
+- editor: dont use vim, it is scary. Switch to notepad or notepad++
 
-```{r}
-#| echo: false
-2 * 2
-```
 
-The `echo: false` option disables the printing of code (only output is displayed).
+## More indepth explaination on differnces between SVCS and DVCS's?
+## GitHub
+
+Talking about GitHub is probably not something we will touch upon in the presentation / during the seminar, since it is not something that will be used in day to day work. But there should probably
+be some information on what it is in the notes.
+
+## Git bash
+
+Write a guide on how to use Git bash for Windows. A list of commands and such would be helpful.
+Use material Benjamin has made as inspiration.
+
+## Git internals
+
+Some summarized notes on Git internals from Pro Git maybe. Might be of interest to some people,
+but might primarily be of interest to myself / a good place to summarize some stuff that is 
+easy to forget but important.
+
+## I fucked up. How do I restore deleted/lost code?
+
+Should for sure be a chapter on this.
+
+## Resources
+
+Google
+
+Manual pages: git help commands. Refer to these instead of docs on internet. These manpages
+are always available offline.
+
+Pro Git book [download](https://git-scm.com/book/en/v2)
+
+

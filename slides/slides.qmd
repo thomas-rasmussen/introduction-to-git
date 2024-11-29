@@ -3,26 +3,72 @@ title: "Introduction to Git"
 format:
   revealjs:
     self-contained: true
-    theme: moon
 ---
 
-## Quarto
-
-Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
-
-## Bullets
-
-When you click the **Render** button a document will be generated that includes:
-
--   Content authored with markdown
--   Output from executable code
-
-## Code
-
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
-
 ```{r}
-1 + 1
+#| label: setup
+#| echo: false
+#| include: false
+
+library(tidyverse)
+```
+
+## Overview
+
+- Part I: Introductino to basic Git
+  
+  - What is Git
+  - Using Git Bash. Just do it. Powershell would technically be an alternative. All git commands
+    would work but you would (probably) not be able to do other kinds of basic commands that is
+    not Git?
+  - Why bother? Current practices with "old" folders and proper structure is good enough?
+  - Setup/configuration of Git? git config stuff? Using Git Bash
+  - Basic Git usage. Introduce commands with running example?
+  - The three stages
+  - More technical command
+  - Running example that is live coded to show off introduced concepts?
+  - Basic exercises playing around with the basic commands
+
+- Part II: Using git in day to day work
+  - Simple ways of using Git in projects
+  - Initialize a repository in an existing directory
+  - Branching
+  - Exercises meant to illustrate a simple but good workflow
+    - Brances for stupid 
+  
+Probably not time for this, but some of it will probably come up in discussions
+anyway, maybe there is time to talk about some of it
+
+- Part III: Advanced use
+  - Advanced commands. Like reset, rebase, diff etc
+  - remotes
+  - GitHub
+  - aliases. can/should maybe be included in part I
+  - Collaboration on a codebase
+  - Distributed workflows / Git flow / whatever something about having a plan on how to do things.
+  - Why use specifically Git? Are there any alternatives? See eg Pro Git chapter 1
+  - Git GUI/IDE's. What are popular choices. Pro's and con's over using only Git Bash. Specifically
+    Git versus Subversion.
+  - Version controlling output. Can it be justified in practice? Always better to only version-control code?
+  - What to do when you royally fuck up? Talk about minimizing deleting code using remotes and proper
+    work flows. 
+ 
+  
+## Git commit history diagram test
+
+
+```{mermaid}
+gitGraph
+   commit
+   commit
+   branch develop
+   checkout develop
+   commit
+   commit
+   checkout main
+   merge develop
+   commit
+   commit
 ```
 
 
