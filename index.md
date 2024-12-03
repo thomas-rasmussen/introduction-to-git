@@ -1,3 +1,3 @@
 Link to notes: [notes link](notes.html)
 
-Link to slides: [slides link](/slides/slides.html)
+Link to slides: [slides link](slides.html)

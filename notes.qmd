@@ -6,6 +6,11 @@ format:
     theme: cosmo
 ---
 
+## Notes / TODO
+
+  
+
+
 ## Download and install Git and Git BASH on Windows
 
 ### Download Git
