@@ -17,6 +17,9 @@ format:
 
 - For each section in the notes, it will probably be a good idea to give some references
   to where the information is comming from.
+  
+- Consider writing a sectino on git commit message templates as Benjamin has done.
+  This could be a useful tool.
 
   
 

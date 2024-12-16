@@ -1,0 +1,35 @@
+---
+title: "Exercises"
+format:
+  html:
+    self-contained: true
+    theme: cosmo
+---
+
+Each exercise should include references to help docs and/or notes document?
+Add "solutions" / hints for exercises? Can be made so that text/code is hidden I think
+
+## Exercise 1.1.0 - Configure your Git profile
+
+## Exercise 1.2.1 - Initatiate a Git repository
+
+## Exercise 1.2.2 - Commit code
+
+## Clone a Git repository from GitHub
+
+Clone the repository used to make these exercises. It can be found at
+[https://github.com/thomas-rasmussen/introduction-to-git](https://github.com/thomas-rasmussen/introduction-to-git)
+
+
+::: {.callout-tip collapse=true appearance="simple"}
+## Hint 1
+
+Press the green "Code" button for help on how to clone the repository using different approaches.
+:::
+
+Hint 2: The easiest way to clone the repository is using HTTPS
+
+Solution: Cloning the repository (in your current work directory) using HTTPS: 
+
+git clone "https://github.com/thomas-rasmussen/introduction-to-git.git"
+

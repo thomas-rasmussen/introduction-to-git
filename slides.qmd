@@ -21,7 +21,7 @@ format:
 
 Part I - Introduction to Git
 
-Part II - Using Git in projects
+Part II - Using Git in practice
 
 Part III - Advanced use of Git
 
