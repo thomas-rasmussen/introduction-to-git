@@ -8,6 +8,16 @@ format:
 
 ## Notes / TODO
 
+- Might make sense to include an "examples" folder with subfolders for each exercise
+  with all the needed starting files? These could then also be used for examples during
+  the presentation? Examples can include files, but not subfolder Git repositories.
+  Any example that needs an existing repository could just use this repo? Any other example
+  that needs eg a commit history the participants could create themselves. Repeating the
+  basic commands many times is probably a good thing anyway.
+
+- For each section in the notes, it will probably be a good idea to give some references
+  to where the information is comming from.
+
   
 
 
@@ -50,6 +60,24 @@ easy to forget but important.
 ## I fucked up. How do I restore deleted/lost code?
 
 Should for sure be a chapter on this.
+
+## Best practices
+
+Maybe some best practice advice?
+
+- Make incremental small changes
+
+- Only commit code (to master/dev/feature brances) that works as intended
+
+- Write clear concise commit messages.
+
+- Use a consistent branch strategy.
+
+
+### Central versus distributed VCS's
+
+Will probably not go into details in the presentation, but some extra notes might be
+of interest. 
 
 ## Resources
 

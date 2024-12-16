@@ -26,30 +26,40 @@ Part II - Using Git in projects
 Part III - Advanced use of Git
 
 
-# Part I - Introduction to Git
+## Part I - Introduction to Git
 
-## Version control systems
+![](images/xkcd_git.png){width=30% fig-align="center"}
 
-Version control systems (VCS) records changes to files over time
-
-Facilitates reverting back and forth between different versions of files.
-
-::: {.notes}
-Speaker notes go here.
+::: aside
+https://xkcd.com/1597/
 :::
 
 ## What is Git?
 
-Git is a so-called distributed version control system (DVCS)
+Git is a distributed version control system (DVCS)
 
-Originally developed by Linus Torvald, the creator of Linux, to replace the DVCS BitKeeper
-that was used to manage developed of the Linux kernal software project.
+- Version control system: Software that tracks different versions of files
+
+- Distributed: There is no central repository; each copy of the codebase contains the
+  entire history of versions of files.^[See accompaning notes for more details]
+
+::: {.notes}
+Just a very brief explaination. We might get back to the "distributed" part later. If not,
+there is (probably) some more in-depth details about this in the notes.
+:::
+
 
 ## Why bother?
 
 Why not just make copies of files and save in another folder?
 
+- More rigorous than making folders with old versions of code.
 
+- Makes it easy to switch back and forth between different versions of files
+
+- Makes it easy to see precise differences in different versions of code
+
+- Enhances collaboration on code by multiple persons
 
 ## TODO
 
