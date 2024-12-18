@@ -33,3 +33,4 @@ Solution: Cloning the repository (in your current work directory) using HTTPS:
 
 git clone "https://github.com/thomas-rasmussen/introduction-to-git.git"
 
+## Make a (local) remote for a repository

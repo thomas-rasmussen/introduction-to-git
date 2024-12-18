@@ -17,6 +17,13 @@ format:
 # library(tidyverse)
 ```
 
+## Notes/TODO
+
+- Incorporate a running example illustrating all the introduced concepts and commands.
+
+- Split up the presentation into 3 separate presentations, once for each part? Might make
+  everything a little more manageable? On the other hand it would be nice to have everything together in one file. Maybe only split up if compile times becomes irratingly long and/or file size
+  becomes too big (whatever that would be)
 ## Overview
 
 Part I - Introduction to Git
@@ -36,34 +43,77 @@ https://xkcd.com/1597/
 
 ## What is Git?
 
-Git is a distributed version control system (DVCS)
+Git is a distributed version control system
 
-- Version control system: Software that tracks different versions of files
+Version control system: Software that tracks different versions of files
 
-- Distributed: There is no central repository; each copy of the codebase contains the
-  entire history of versions of files.^[See accompaning notes for more details]
+Distributed: There is no central repository. Each copy of the codebase contains the
+entire history of versions of files.
 
 ::: {.notes}
-Just a very brief explaination. We might get back to the "distributed" part later. If not,
-there is (probably) some more in-depth details about this in the notes.
+Git is a distributed version control system (DVCS). A version control system (VCS)
+is aprogram that tracks different version of files. In a *distributed* VCS there is
+no contral repository where the code lives. Each copy of the codebase contrains
+the entire history of version of files. In many contexts this is vastly superior
+to earlier *centralized* VCS, where there is a central codebase from which
+code is copied.
 :::
 
 
 ## Why bother?
 
-Why not just make copies of files and save in another folder?
+Why not do version control manually by eg saving version of code in folders with
+a datestamp or something similar?
+
+Advantages of using Git.
 
 - More rigorous than making folders with old versions of code.
 
 - Makes it easy to switch back and forth between different versions of files
 
-- Makes it easy to see precise differences in different versions of code
+- Makes it easy to see precise differences of versions of code
 
-- Enhances collaboration on code by multiple persons
+- Enhances collaboration on codebase by multiple persons
+
+
+::: {.notes}
+
+:::
+
+
+## Setup
+
+So how do we get started:
+
+- Download Git for windows
+
+- Configure Git Bash
+
+
+::: {.notes}
+We assume that the reader has already installed Git for Windows and has configured
+the Git Bash (set user credentials and default editor). If not, see notes document for a guide.
+:::
+
+
+## Some Git technical stuff
+
+at this point it is probably time to explain some of the basic concepts in Git, eg the
+work directory / staging / history, and introduce init/add/commit commands? We only need these
+3 commands to get started right?
+
+Next up we should start the running example, and then introduce git log so that we can 
+visualize the history of commits.
+
+At this point we already know enough to use Git in practice in a real project in a simple meaningful way?
+
+
+
+
+
 
 ## TODO
 
-  - Why bother? Current practices with "old" folders and proper structure is good enough?
   - Using Git Bash. Just do it. Powershell would technically be an alternative. All git commands
     would work but you would (probably) not be able to do other kinds of basic commands that is
     not Git?
