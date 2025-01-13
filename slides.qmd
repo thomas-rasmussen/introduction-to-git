@@ -19,7 +19,13 @@ format:
 
 ## Notes/TODO
 
-- Incorporate a running example illustrating all the introduced concepts and commands.
+- Read up on HTML stuff and figure out how to make a custom "terminal code" class that can be
+applied to command prompt / git commands that uses a monospace font, uses standard quatation marks
+instead of left and right quatation marks etc. Ideally, drop the callout-block approach and make
+a custom approach ourselves making a box etc.
+
+- Incorporate a running example illustrating all the introduced concepts and commands? It would probably make
+sense to build something reassembling a typical DCE project from scratch? Is a "running exercise" better for this?
 
 - Split up the presentation into 3 separate presentations, once for each part? Might make
   everything a little more manageable? On the other hand it would be nice to have everything together in one file. Maybe only split up if compile times becomes irratingly long and/or file size
@@ -40,6 +46,29 @@ Part III - Advanced use of Git
 ::: aside
 https://xkcd.com/1597/
 :::
+
+## Part I overview
+
+What is Git
+
+Setup
+
+Introduce basic commands in the other they are needed
+
+1) git init (without too much explaning)
+2) git add
+3) git commit
+
+With this you can use Git in a useful way. Everything else optional I guess. Next order of
+business is probably git log, and finally maybe git reset for undoing stuff?
+
+Git clone is a basic command is a basic command I guess, but it is going to be irrelevant in 99%
+of our use cases, so it probably makes sense to save that for when we start talking about remotes / Github.
+
+This section should probably also introduce .gitignore files at an appropriate time. 
+
+Build the section around the hypothesis that 95% of the time, people are going to be working alone
+on their own codebase, without needing/wanting to use any remotes / Github.
 
 ## What is Git?
 
@@ -109,8 +138,68 @@ At this point we already know enough to use Git in practice in a real project in
 
 
 
+## Initialize a Git repository
+
+Make a local directory into a Git repository:
+
+1) Change directory to local directory using cd command
+
+:::{.callout-note appearance="minimal" style="font-family: monospace"}
+cd "S:/some path/probably/with spaces"
+:::
+
+2) Use git init command to initialize Git repository in folder
+
+:::{.callout-note appearance="minimal" style="font-family: monospace"}
+git init
+:::
 
 
+::: {.notes}
+
+Note that it is only necessary to quote the filepath with the cd
+command if the filepath contains spaces.
+
+The file directory is shown as  "/s/some path/probably/with spaces"in Git Bash.
+This form can also be used, ie "cd /s/some path/probably/with space".
+
+It is often easier to right click (or shift+right click on Windows 11) on the folder
+of interest and select "Open with Git Bash here".
+
+Running git init in a directory creates a new subdirectory named ".git" that contains
+all of your necessary repository files. We will not talk about what the content of ".git"
+is at this point, but might come back to some of it later.
+
+:::
+
+## Running example I
+
+Start a running example of live coding at this point?
+
+::: {.notes}
+
+1) Make a directory
+2) Change directory in Git Bash to the newly created directory
+2) Make a plain README text file in the directory. Do it using touch/echo commands
+   to showcase using Git Bash.
+
+:::
+
+## Recording changes
+
+
+## The lifecycle of the status of files
+
+![](diagrams/lifecycle-status-files.svg){width=90% fig-align="center"}
+
+::: {.aside}
+Adaptation of diagram from Pro Git p. 26
+:::
+
+
+::: {.notes}
+
+:::
 
 ## TODO
 
